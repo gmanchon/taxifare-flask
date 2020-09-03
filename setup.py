@@ -2,6 +2,9 @@ from setuptools import find_packages
 from setuptools import setup
 
 REQUIRED_PACKAGES = [
+    # flask
+    'Flask==1.1.1',
+    'Flask-Cors==3.0.8',
     # training
     'numpy==1.18.4',
     'pandas==0.24.2',

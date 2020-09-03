@@ -1,26 +1,20 @@
 
-DE day 4 recap
+DE day 5 course
 
 # usage
 
-sit at the root of the project
+sit at the root of the project and launch the api
 
 ``` bash
-python train.py
+make flask
 ```
 
-# taxifare trainer
+# prod
 
-reuse generic minimistic trainer from scratch with:
-- a transfo
-- a pipeline
-- iterate through the trainer on hyperparams
-- upload params and metrics to mlflow
-- use mlflow base class
+``` bash
+heroku ps:scale web=1
+```
+# taxifare flask
 
-in order to:
-- download training data from gcp
-- upload trained model to gcp
-- iterate on trainings + mlflow
-- iterate using a gridsearch + mlflow
-- use a bigger machine to demonstrate the ROI of using gcp
+reuse de_d4_recap_450
+- expose flask api

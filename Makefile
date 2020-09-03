@@ -24,6 +24,9 @@ FILENAME=trainer
 
 JOB_NAME=taxi_fare_training_pipeline_450_$(shell date +'%Y%m%d_%H%M%S')
 
+flask:
+	env FLASK_APP=app.py flask run
+
 run_locally:
 	python -m Taxifare.trainer
 
