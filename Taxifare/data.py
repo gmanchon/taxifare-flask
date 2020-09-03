@@ -6,7 +6,7 @@ from Taxifare.params import BUCKET_NAME, BUCKET_TRAIN_DATA_PATH
 
 def get_data():
     url = "s3://wagon-public-datasets/taxi-fare-train.csv"
-    df = pd.read_csv(url, nrows=1_000_000)
+    df = pd.read_csv(url, nrows=100)
     return df
 
 def get_data_from_gcp():
